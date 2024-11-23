@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "realmtreemod:block/blackwalnut_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "realmtreemod:block/blackwalnut_log"
+    },
+    "axis=z": {
+      "model": "realmtreemod:block/blackwalnut_log_horizontal",
+      "x": 90
+    }
+  }
+}
