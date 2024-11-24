@@ -1,5 +1,6 @@
 {
   "values": [
+    "realmtreemod:shadow_fir_log",
     "realmtreemod:sunelf_log",
     "realmtreemod:evilwood_log",
     "realmtreemod:ironwood_log",
@@ -13,6 +14,11 @@
     "realmtreemod:uathar_log",
     "realmtreemod:oufyew_log",
     "realmtreemod:ayifer_log",
+    "realmtreemod:iorany_log",
+    "realmtreemod:darkelf_log",
+    "realmtreemod:yezhove_log",
+    "realmtreemod:edlifer_log",
+    "realmtreemod:klinwood_log",
     "realmtreemod:blackwalnut_log"
   ]
 }

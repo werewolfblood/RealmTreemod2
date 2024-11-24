@@ -20,6 +20,9 @@ public class RealmItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(InitBlocks.EVIL_LEAVES.asItem())
                 .add(InitBlocks.CRYSTAL_LEAVES.asItem())
                 .add(InitBlocks.SILVER_LEAVES.asItem())
+                .add(InitBlocks.DARKELF_SAPLING.asItem())
+                .add(InitBlocks.MITHRIL_SAPLING.asItem())
+                .add(InitBlocks.BLACKWALNUT_SAPLING.asItem())
                 .add(InitBlocks.MITHRIL_LEAVES.asItem());
     }
 }

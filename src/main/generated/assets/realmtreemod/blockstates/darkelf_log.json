@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "realmtreemod:block/darkelf_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "realmtreemod:block/darkelf_log"
+    },
+    "axis=z": {
+      "model": "realmtreemod:block/darkelf_log_horizontal",
+      "x": 90
+    }
+  }
+}

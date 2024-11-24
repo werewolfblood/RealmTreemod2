@@ -44,6 +44,15 @@ public class RealmLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(InitBlocks.EVIL_LEAVES);
         addDrop(InitBlocks.IORANY_LOG);
         addDrop(InitBlocks.SHADOW_FIR_LOG);
+        addDrop(InitBlocks.BLACKWALNUT_SAPLING);
+        addDrop(InitBlocks.MITHRIL_SAPLING);
+        addDrop(InitBlocks.DARKELF_LOG);
+        addDrop(InitBlocks.YEZHOVE_LOG);
+       addDrop(InitBlocks.EDLIFER_LOG);
+       addDrop(InitBlocks.KLINWOOD_LOG);
+       addDrop(InitBlocks.GREEN_FIR_LOG);
+       addDrop(InitBlocks.ASHRET_LOG);
+        addDrop(InitBlocks.DARKELF_SAPLING);
 
     }
 

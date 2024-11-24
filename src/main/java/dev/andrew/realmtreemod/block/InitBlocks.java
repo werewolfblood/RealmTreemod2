@@ -46,6 +46,18 @@ public class InitBlocks {
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block SHADOW_FIR_LOG = registerBlock("shadow_fir_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DARKELF_LOG = registerBlock("darkelf_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block YEZHOVE_LOG = registerBlock("yezhove_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block EDLIFER_LOG = registerBlock("edlifer_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block KLINWOOD_LOG = registerBlock("klinwood_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block GREEN_FIR_LOG = registerBlock("green_fir_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ASHRET_LOG = registerBlock("ashret_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block MITHRIL_LEAVES = registerBlock("mithril_leaves",
             new LeavesBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.PINK)
@@ -101,7 +113,44 @@ public class InitBlocks {
                     .burnable()
                     .pistonBehavior(PistonBehavior.DESTROY)
                     .solidBlock(Blocks::never)));
+public  static final Block BLACKWALNUT_SAPLING = registerBlock("blackwalnut_sapling",
+        new SaplingBlock(
+                SaplingGenerator.SPRUCE,
+                AbstractBlock.Settings.create()
+                        .mapColor(MapColor.DARK_GREEN)
+                        .noCollision()
+                        .ticksRandomly()
+                        .breakInstantly()
+                        .sounds(BlockSoundGroup.GRASS)
+                        .pistonBehavior(PistonBehavior.DESTROY)
+        )
+);
 
+    public  static final Block MITHRIL_SAPLING = registerBlock("mithril_sapling",
+            new SaplingBlock(
+                    SaplingGenerator.SPRUCE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_GREEN)
+                            .noCollision()
+                            .ticksRandomly()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public  static final Block DARKELF_SAPLING = registerBlock("darkelf_sapling",
+            new SaplingBlock(
+                    SaplingGenerator.SPRUCE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_GREEN)
+                            .noCollision()
+                            .ticksRandomly()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -138,6 +187,15 @@ public class InitBlocks {
             entries.add(InitBlocks.EVIL_LEAVES);
             entries.add(InitBlocks.IORANY_LOG);
             entries.add(InitBlocks.SHADOW_FIR_LOG);
+            entries.add(InitBlocks.BLACKWALNUT_SAPLING);
+            entries.add(InitBlocks.MITHRIL_SAPLING);
+            entries.add(InitBlocks.DARKELF_LOG);
+            entries.add(InitBlocks.YEZHOVE_LOG);
+            entries.add(InitBlocks.DARKELF_SAPLING);
+            entries.add(InitBlocks.EDLIFER_LOG);
+            entries.add(InitBlocks.KLINWOOD_LOG);
+            entries.add(InitBlocks.GREEN_FIR_LOG);
+            entries.add(InitBlocks.ASHRET_LOG);
         });
     }
 }

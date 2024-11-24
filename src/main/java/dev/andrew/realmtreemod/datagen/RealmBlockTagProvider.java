@@ -31,6 +31,12 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.MITHRIL_LEAVES)
                 .add(InitBlocks.IORANY_LOG)
                 .add(InitBlocks.SHADOW_FIR_LOG)
+                .add(InitBlocks.DARKELF_LOG)
+                .add(InitBlocks.YEZHOVE_LOG)
+                .add(InitBlocks.EDLIFER_LOG)
+                .add(InitBlocks.KLINWOOD_LOG)
+                .add(InitBlocks.GREEN_FIR_LOG)
+                .add(InitBlocks.ASHRET_LOG)
                 .add(InitBlocks.BlACKWALNUT_LOG);
 
 
@@ -51,6 +57,12 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.OUFYEW_LOG)
                 .add(InitBlocks.AYIFER_LOG)
                 .add(InitBlocks.IORANY_LOG)
+                .add(InitBlocks.DARKELF_LOG)
+                .add(InitBlocks.YEZHOVE_LOG)
+                .add(InitBlocks.EDLIFER_LOG)
+                .add(InitBlocks.KLINWOOD_LOG)
+                .add(InitBlocks.GREEN_FIR_LOG)
+                .add(InitBlocks.ASHRET_LOG)
                 .add(InitBlocks.BlACKWALNUT_LOG);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
@@ -58,5 +70,10 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.CRYSTAL_LEAVES)
                 .add(InitBlocks.SILVER_LEAVES)
                 .add(InitBlocks.MITHRIL_LEAVES);
+
+        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(InitBlocks.DARKELF_SAPLING)
+                .add(InitBlocks.MITHRIL_SAPLING)
+                .add(InitBlocks.BLACKWALNUT_SAPLING);
     }
 }
