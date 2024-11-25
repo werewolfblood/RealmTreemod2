@@ -37,6 +37,14 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.KLINWOOD_LOG)
                 .add(InitBlocks.GREEN_FIR_LOG)
                 .add(InitBlocks.ASHRET_LOG)
+                .add(InitBlocks.SUNELF_LEAVES)
+                .add(InitBlocks.DARKELF_LEAVES)
+                .add(InitBlocks.WEEPING_LOG)
+                .add(InitBlocks.OTHON_LOG)
+                .add(InitBlocks.ALOGRORN_LOG)
+                .add(InitBlocks.EIKEW_LOG)
+                .add(InitBlocks.DLONET_LOG)
+                .add(InitBlocks.DIRE_LOG)
                 .add(InitBlocks.BlACKWALNUT_LOG);
 
 
@@ -63,9 +71,17 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.KLINWOOD_LOG)
                 .add(InitBlocks.GREEN_FIR_LOG)
                 .add(InitBlocks.ASHRET_LOG)
+                .add(InitBlocks.WEEPING_LOG)
+                .add(InitBlocks.OTHON_LOG)
+                .add(InitBlocks.ALOGRORN_LOG)
+                .add(InitBlocks.EIKEW_LOG)
+                .add(InitBlocks.DLONET_LOG)
+                .add(InitBlocks.DIRE_LOG)
                 .add(InitBlocks.BlACKWALNUT_LOG);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(InitBlocks.DARKELF_LEAVES)
+                .add(InitBlocks.SUNELF_LEAVES)
                 .add(InitBlocks.EVIL_LEAVES)
                 .add(InitBlocks.CRYSTAL_LEAVES)
                 .add(InitBlocks.SILVER_LEAVES)

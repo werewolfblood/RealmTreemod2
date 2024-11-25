@@ -55,13 +55,28 @@ public class RealmModelProvider extends FabricModelProvider {
                 .log(InitBlocks.KLINWOOD_LOG);
         blockStateModelGenerator.registerLog(InitBlocks.GREEN_FIR_LOG)
                 .log(InitBlocks.GREEN_FIR_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.WEEPING_LOG)
+                .log(InitBlocks.WEEPING_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.OTHON_LOG)
+                .log(InitBlocks.OTHON_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.ALOGRORN_LOG)
+                .log(InitBlocks.ALOGRORN_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.EIKEW_LOG)
+                .log(InitBlocks.EIKEW_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.DLONET_LOG)
+                .log(InitBlocks.DLONET_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.DIRE_LOG)
+                .log(InitBlocks.DIRE_LOG);
+
+
 
 
         blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.MITHRIL_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.SILVER_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.CRYSTAL_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.EVIL_LEAVES);
-
+        blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.SUNELF_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.DARKELF_LEAVES);
 
         blockStateModelGenerator.registerTintableCross(InitBlocks.BLACKWALNUT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(InitBlocks.MITHRIL_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);

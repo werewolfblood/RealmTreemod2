@@ -58,6 +58,18 @@ public class InitBlocks {
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block ASHRET_LOG = registerBlock("ashret_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block WEEPING_LOG = registerBlock("weeping_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block OTHON_LOG = registerBlock("othon_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ALOGRORN_LOG = registerBlock("alogrorn_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block EIKEW_LOG = registerBlock("eikew_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DLONET_LOG = registerBlock("dlonet_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DIRE_LOG = registerBlock("dire_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block MITHRIL_LEAVES = registerBlock("mithril_leaves",
             new LeavesBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.PINK)
@@ -101,6 +113,34 @@ public class InitBlocks {
                     .solidBlock(Blocks::never)));
 
     public static final Block EVIL_LEAVES = registerBlock("evil_leaves",
+            new LeavesBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PINK)
+                    .strength(0.2F)
+                    .ticksRandomly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
+
+    public static final Block SUNELF_LEAVES = registerBlock("sunelf_leaves",
+            new LeavesBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PINK)
+                    .strength(0.2F)
+                    .ticksRandomly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
+
+    public static final Block DARKELF_LEAVES = registerBlock("darkelf_leaves",
             new LeavesBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.PINK)
                     .strength(0.2F)
@@ -196,6 +236,14 @@ public  static final Block BLACKWALNUT_SAPLING = registerBlock("blackwalnut_sapl
             entries.add(InitBlocks.KLINWOOD_LOG);
             entries.add(InitBlocks.GREEN_FIR_LOG);
             entries.add(InitBlocks.ASHRET_LOG);
+            entries.add(InitBlocks.SUNELF_LEAVES);
+            entries.add(InitBlocks.DARKELF_LEAVES);
+            entries.add(InitBlocks.WEEPING_LOG);
+            entries.add(InitBlocks.OTHON_LOG);
+            entries.add(InitBlocks.ALOGRORN_LOG);
+            entries.add(InitBlocks.EIKEW_LOG);
+            entries.add(InitBlocks.DLONET_LOG);
+            entries.add(InitBlocks.DIRE_LOG);
         });
     }
 }
