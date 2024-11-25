@@ -1,5 +1,7 @@
-// 1.21.1	2024-11-24T21:29:49.6497224	RealmTree Mod/Tags for minecraft:block
-5c64c1e8018b87c9b09ec7f19ddf29a63fc78f25 data\minecraft\tags\block\saplings.json
+// 1.21.1	2024-11-25T01:36:57.9781009	RealmTree Mod/Tags for minecraft:block
+c811a5a5520ca2d4378a8646b3ae0d3acebc940c data\minecraft\tags\block\fences.json
+3768d69b6d2b5bcfeb2368fb563af0094412e100 data\minecraft\tags\block\planks.json
 63ad694b9d7ee1b4d9d44556b2019ae4a88c2435 data\minecraft\tags\block\logs.json
-347632a5130c9da5dc824c24b32460062e8a7c7c data\minecraft\tags\block\mineable\axe.json
+b718f03168a3e854139db9dfa0bae7a07f44ccef data\minecraft\tags\block\mineable\axe.json
 7ce811a2812863fef2b89472e7df320644465960 data\minecraft\tags\block\leaves.json
+587f72d32a88b11858bab14726da9b96256c4d17 data\minecraft\tags\block\slabs.json

@@ -70,6 +70,18 @@ public class InitBlocks {
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block DIRE_LOG = registerBlock("dire_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block MITHRIL_PLANKS = registerBlock("mithril_planks",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block MITHRIL_PLANKS_SLAB = registerBlock("mithril_planks_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block MITHRIL_PLANKS_FENCE = registerBlock("mithril_planks_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DROW_PLANKS = registerBlock("drow_planks",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DROW_PLANKS_SLAB = registerBlock("drow_planks_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DROW_PLANKS_FENCE = registerBlock("drow_planks_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block MITHRIL_LEAVES = registerBlock("mithril_leaves",
             new LeavesBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.PINK)
@@ -153,44 +165,7 @@ public class InitBlocks {
                     .burnable()
                     .pistonBehavior(PistonBehavior.DESTROY)
                     .solidBlock(Blocks::never)));
-public  static final Block BLACKWALNUT_SAPLING = registerBlock("blackwalnut_sapling",
-        new SaplingBlock(
-                SaplingGenerator.SPRUCE,
-                AbstractBlock.Settings.create()
-                        .mapColor(MapColor.DARK_GREEN)
-                        .noCollision()
-                        .ticksRandomly()
-                        .breakInstantly()
-                        .sounds(BlockSoundGroup.GRASS)
-                        .pistonBehavior(PistonBehavior.DESTROY)
-        )
-);
 
-    public  static final Block MITHRIL_SAPLING = registerBlock("mithril_sapling",
-            new SaplingBlock(
-                    SaplingGenerator.SPRUCE,
-                    AbstractBlock.Settings.create()
-                            .mapColor(MapColor.DARK_GREEN)
-                            .noCollision()
-                            .ticksRandomly()
-                            .breakInstantly()
-                            .sounds(BlockSoundGroup.GRASS)
-                            .pistonBehavior(PistonBehavior.DESTROY)
-            )
-    );
-
-    public  static final Block DARKELF_SAPLING = registerBlock("darkelf_sapling",
-            new SaplingBlock(
-                    SaplingGenerator.SPRUCE,
-                    AbstractBlock.Settings.create()
-                            .mapColor(MapColor.DARK_GREEN)
-                            .noCollision()
-                            .ticksRandomly()
-                            .breakInstantly()
-                            .sounds(BlockSoundGroup.GRASS)
-                            .pistonBehavior(PistonBehavior.DESTROY)
-            )
-    );
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -227,11 +202,8 @@ public  static final Block BLACKWALNUT_SAPLING = registerBlock("blackwalnut_sapl
             entries.add(InitBlocks.EVIL_LEAVES);
             entries.add(InitBlocks.IORANY_LOG);
             entries.add(InitBlocks.SHADOW_FIR_LOG);
-            entries.add(InitBlocks.BLACKWALNUT_SAPLING);
-            entries.add(InitBlocks.MITHRIL_SAPLING);
             entries.add(InitBlocks.DARKELF_LOG);
             entries.add(InitBlocks.YEZHOVE_LOG);
-            entries.add(InitBlocks.DARKELF_SAPLING);
             entries.add(InitBlocks.EDLIFER_LOG);
             entries.add(InitBlocks.KLINWOOD_LOG);
             entries.add(InitBlocks.GREEN_FIR_LOG);
@@ -244,6 +216,12 @@ public  static final Block BLACKWALNUT_SAPLING = registerBlock("blackwalnut_sapl
             entries.add(InitBlocks.EIKEW_LOG);
             entries.add(InitBlocks.DLONET_LOG);
             entries.add(InitBlocks.DIRE_LOG);
+            entries.add(InitBlocks.MITHRIL_PLANKS);
+            entries.add(InitBlocks.MITHRIL_PLANKS_SLAB);
+            entries.add(InitBlocks.MITHRIL_PLANKS_FENCE);
+            entries.add(InitBlocks.DROW_PLANKS);
+            entries.add(InitBlocks.DROW_PLANKS_SLAB);
+            entries.add(InitBlocks.DROW_PLANKS_FENCE);
         });
     }
 }

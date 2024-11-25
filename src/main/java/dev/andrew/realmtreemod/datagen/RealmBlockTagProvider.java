@@ -45,6 +45,11 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.EIKEW_LOG)
                 .add(InitBlocks.DLONET_LOG)
                 .add(InitBlocks.DIRE_LOG)
+                .add(InitBlocks.MITHRIL_PLANKS)
+                .add(InitBlocks.MITHRIL_PLANKS_SLAB)
+                .add(InitBlocks.DROW_PLANKS)
+                .add(InitBlocks.DROW_PLANKS_SLAB)
+                .add(InitBlocks.DROW_PLANKS_FENCE)
                 .add(InitBlocks.BlACKWALNUT_LOG);
 
 
@@ -87,9 +92,21 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.SILVER_LEAVES)
                 .add(InitBlocks.MITHRIL_LEAVES);
 
-        getOrCreateTagBuilder(BlockTags.SAPLINGS)
-                .add(InitBlocks.DARKELF_SAPLING)
-                .add(InitBlocks.MITHRIL_SAPLING)
-                .add(InitBlocks.BLACKWALNUT_SAPLING);
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(InitBlocks.DROW_PLANKS)
+                .add(InitBlocks.MITHRIL_PLANKS);
+
+
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(InitBlocks.DROW_PLANKS_SLAB)
+                .add(InitBlocks.MITHRIL_PLANKS_SLAB);
+
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(InitBlocks.DROW_PLANKS_FENCE)
+                .add(InitBlocks.MITHRIL_PLANKS_FENCE);
+
+
+
     }
 }

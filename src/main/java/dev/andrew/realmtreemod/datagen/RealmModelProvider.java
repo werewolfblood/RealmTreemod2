@@ -13,12 +13,14 @@ public class RealmModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+BlockStateModelGenerator.BlockTexturePool REALMGRANET = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.MITHRIL_PLANKS);
+BlockStateModelGenerator.BlockTexturePool RPGGRANET = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.DROW_PLANKS);
+        blockStateModelGenerator.registerLog(InitBlocks.MITHRIL_LOG)
+                        .log(InitBlocks.MITHRIL_LOG);
         blockStateModelGenerator.registerLog(InitBlocks.BlACKWALNUT_LOG)
                 .log(InitBlocks.BlACKWALNUT_LOG);
         blockStateModelGenerator.registerLog(InitBlocks.BlACKWILLOW_LOG)
                 .log(InitBlocks.BlACKWILLOW_LOG);
-        blockStateModelGenerator.registerLog(InitBlocks.MITHRIL_LOG)
-                .log(InitBlocks.MITHRIL_LOG);
         blockStateModelGenerator.registerLog(InitBlocks.BLUECRYSTAL_LOG)
                 .log(InitBlocks.BLUECRYSTAL_LOG);
         blockStateModelGenerator.registerLog(InitBlocks.DROW_LOG)
@@ -70,6 +72,19 @@ public class RealmModelProvider extends FabricModelProvider {
 
 
 
+        REALMGRANET.slab(InitBlocks.MITHRIL_PLANKS_SLAB);
+        RPGGRANET.slab(InitBlocks.DROW_PLANKS_SLAB);
+
+
+
+        REALMGRANET.fence(InitBlocks.MITHRIL_PLANKS_FENCE);
+        RPGGRANET.fence(InitBlocks.DROW_PLANKS_FENCE);
+
+
+
+
+
+
 
         blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.MITHRIL_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.SILVER_LEAVES);
@@ -78,9 +93,11 @@ public class RealmModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.SUNELF_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(InitBlocks.DARKELF_LEAVES);
 
-        blockStateModelGenerator.registerTintableCross(InitBlocks.BLACKWALNUT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerTintableCross(InitBlocks.MITHRIL_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerTintableCross(InitBlocks.DARKELF_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+
+
+
+
     }
 
     @Override

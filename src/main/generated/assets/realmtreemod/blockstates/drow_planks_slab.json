@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realmtreemod:block/drow_planks_slab"
+    },
+    "type=double": {
+      "model": "realmtreemod:block/drow_planks"
+    },
+    "type=top": {
+      "model": "realmtreemod:block/drow_planks_slab_top"
+    }
+  }
+}

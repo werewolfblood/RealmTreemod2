@@ -30,6 +30,11 @@
     "realmtreemod:eikew_log",
     "realmtreemod:dlonet_log",
     "realmtreemod:dire_log",
+    "realmtreemod:mithril_planks",
+    "realmtreemod:mithril_planks_slab",
+    "realmtreemod:drow_planks",
+    "realmtreemod:drow_planks_slab",
+    "realmtreemod:drow_planks_fence",
     "realmtreemod:blackwalnut_log"
   ]
 }
