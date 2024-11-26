@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "facing=down,thickness=seven":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=up,thickness=seven":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=north,thickness=seven":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=south,thickness=seven":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=east,thickness=seven":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=west,thickness=seven":  { "model": "realmtreemod:block/drow_planks_slab" },
+
+    "facing=down,thickness=one":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "uvlock": true},
+    "facing=up,thickness=one":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "x": 180 , "uvlock": true},
+    "facing=north,thickness=one":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,thickness=one":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "x": 90 , "uvlock": true},
+    "facing=east,thickness=one":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,thickness=one":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,thickness=two":  { "model": "drow_planks_slab:block/stack_slab-drow_two" , "uvlock": true},
+    "facing=up,thickness=two":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 180 , "uvlock": true},
+    "facing=north,thickness=two":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,thickness=two":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 90 , "uvlock": true},
+    "facing=east,thickness=two":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,thickness=two":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,thickness=three":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "uvlock": true},
+    "facing=up,thickness=three":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 180 , "uvlock": true},
+    "facing=north,thickness=three":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,thickness=three":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 90 , "uvlock": true},
+    "facing=east,thickness=three":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,thickness=three":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,thickness=four":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "uvlock": true},
+    "facing=up,thickness=four":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 180 , "uvlock": true},
+    "facing=north,thickness=four":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,thickness=four":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 90 , "uvlock": true},
+    "facing=east,thickness=four":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,thickness=four":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,thickness=five":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "uvlock": true},
+    "facing=up,thickness=five":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "x": 180 , "uvlock": true},
+    "facing=north,thickness=five":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,thickness=five":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "x": 90 , "uvlock": true},
+    "facing=east,thickness=five":  { "model": "drow_planks_slab:block/stack_slab-drow_five" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,thickness=five":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,thickness=six":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "uvlock": true},
+    "facing=up,thickness=six":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 180 , "uvlock": true},
+    "facing=north,thickness=six":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,thickness=six":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 90 , "uvlock": true},
+    "facing=east,thickness=six":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,thickness=six":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 90, "y": 90 , "uvlock": true}
+  }
+}

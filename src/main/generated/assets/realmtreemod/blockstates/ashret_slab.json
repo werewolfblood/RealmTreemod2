@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realmtreemod:block/ashret_slab"
+    },
+    "type=double": {
+      "model": "realmtreemod:block/ashret_planks"
+    },
+    "type=top": {
+      "model": "realmtreemod:block/ashret_slab_top"
+    }
+  }
+}

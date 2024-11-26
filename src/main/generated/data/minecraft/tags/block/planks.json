@@ -1,6 +1,17 @@
 {
   "values": [
+    "realmtreemod:blushet_planks",
+    "realmtreemod:smany_planks",
+    "realmtreemod:kress_planks",
+    "realmtreemod:oplood_planks",
+    "realmtreemod:sconet_planks",
+    "realmtreemod:dire_planks",
+    "realmtreemod:alogrorn_planks",
+    "realmtreemod:elf_planks",
+    "realmtreemod:ashret_planks",
+    "realmtreemod:crystal_planks",
     "realmtreemod:drow_planks",
+    "realmtreemod:aeklood_planks",
     "realmtreemod:mithril_planks"
   ]
 }

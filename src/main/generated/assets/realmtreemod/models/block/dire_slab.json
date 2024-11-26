@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "realmtreemod:block/dire_planks",
+    "side": "realmtreemod:block/dire_planks",
+    "top": "realmtreemod:block/dire_planks"
+  }
+}

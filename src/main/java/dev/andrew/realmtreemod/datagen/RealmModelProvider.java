@@ -14,7 +14,17 @@ public class RealmModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 BlockStateModelGenerator.BlockTexturePool REALMGRANET = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.MITHRIL_PLANKS);
-BlockStateModelGenerator.BlockTexturePool RPGGRANET = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.DROW_PLANKS);
+BlockStateModelGenerator.BlockTexturePool RealmGranet = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.CRYSTAL_PLANKS);
+BlockStateModelGenerator.BlockTexturePool MMrealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.ASHRET_PLANKS);
+BlockStateModelGenerator.BlockTexturePool PPrealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.ELF_PLANKS);
+BlockStateModelGenerator.BlockTexturePool RRrealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.ALOGRORN_PLANKS);
+BlockStateModelGenerator.BlockTexturePool EErealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.DIRE_PLANKS);
+BlockStateModelGenerator.BlockTexturePool AArealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.SCONET_PLANKS);
+BlockStateModelGenerator.BlockTexturePool ABrealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.OPLOOD_PLANKS);
+BlockStateModelGenerator.BlockTexturePool BBrealrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.AEKLOOD_PLANKS);
+BlockStateModelGenerator.BlockTexturePool CCrealrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.KRESS_PLANKS);
+BlockStateModelGenerator.BlockTexturePool AArealrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.SMANY_PLANKS);
+BlockStateModelGenerator.BlockTexturePool DDrealrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.BLUSHET_PLANKS);
         blockStateModelGenerator.registerLog(InitBlocks.MITHRIL_LOG)
                         .log(InitBlocks.MITHRIL_LOG);
         blockStateModelGenerator.registerLog(InitBlocks.BlACKWALNUT_LOG)
@@ -69,16 +79,78 @@ BlockStateModelGenerator.BlockTexturePool RPGGRANET = blockStateModelGenerator.r
                 .log(InitBlocks.DLONET_LOG);
         blockStateModelGenerator.registerLog(InitBlocks.DIRE_LOG)
                 .log(InitBlocks.DIRE_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.ASHRET_LOG)
+                .log(InitBlocks.ASHRET_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.MITHRIL_STRIPPED_LOG)
+                        .log(InitBlocks.MITHRIL_STRIPPED_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.ELF_STRIPPED_LOG)
+                        .log(InitBlocks.ELF_STRIPPED_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.BUCKEYE_LOG)
+                        .log(InitBlocks.BUCKEYE_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.DOGWOOD_LOG)
+                        .log(InitBlocks.DOGWOOD_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.SCONET_LOG)
+                        .log(InitBlocks.SCONET_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.OPLOOD_LOG)
+                        .log(InitBlocks.OPLOOD_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.AEKLOOD_LOG)
+                        .log(InitBlocks.AEKLOOD_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.KRESS_LOG)
+                        .log(InitBlocks.KRESS_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.SMANY_LOG)
+                        .log(InitBlocks.SMANY_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.ICHREAM_LOG)
+                        .log(InitBlocks.ICHREAM_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.TUFICH_LOG)
+                        .log(InitBlocks.TUFICH_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.BLUSHET_LOG)
+                        .log(InitBlocks.BLUSHET_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.OTHON_LOG)
+                        .log(InitBlocks.OLEN_LOG);
+            blockStateModelGenerator.registerLog(InitBlocks.GOLD_ELF_LOG)
+                    .log(InitBlocks.GOLD_ELF_LOG);
+            blockStateModelGenerator.registerLog(InitBlocks.TREE_ELF_LOG)
+                    .log(InitBlocks.TREE_ELF_LOG);
+            blockStateModelGenerator.registerLog(InitBlocks.SILVERELF_LOG)
+                    .log(InitBlocks.SILVERELF_LOG);
+            blockStateModelGenerator.registerLog(InitBlocks.PEACH_LOG)
+                    .log(InitBlocks.PEACH_LOG);
+            blockStateModelGenerator.registerLog(InitBlocks.NIGHTELF_LOG)
+                    .log(InitBlocks.NIGHTELF_LOG);
 
 
 
+
+
+
+
+
+        RealmGranet.slab(InitBlocks.CRYSTAL_SLAB);
         REALMGRANET.slab(InitBlocks.MITHRIL_PLANKS_SLAB);
-        RPGGRANET.slab(InitBlocks.DROW_PLANKS_SLAB);
+        MMrealgrant.slab(InitBlocks.ASHRET_SLAB);
+        EErealgrant.slab(InitBlocks.DIRE_SLAB);
+        PPrealgrant.slab(InitBlocks.ELF_SLAB);
+        ABrealgrant.slab(InitBlocks.OPLOOD_SLAB);
+        BBrealrant.slab(InitBlocks.AEKLOOD_SLAB);
+
 
 
 
         REALMGRANET.fence(InitBlocks.MITHRIL_PLANKS_FENCE);
-        RPGGRANET.fence(InitBlocks.DROW_PLANKS_FENCE);
+
+        RRrealgrant.fence(InitBlocks.ALOGRORN_FENCE);
+        RealmGranet.fence(InitBlocks.CRYSTAL_FENCE);
+        MMrealgrant.fence(InitBlocks.ASHRET_FENCE);
+        PPrealgrant.fence(InitBlocks.ELF_FENCE);
+        EErealgrant.fence(InitBlocks.DIRE_FENCE);
+        AArealgrant.fence(InitBlocks.SCONET_FENCE);
+        ABrealgrant.fence(InitBlocks.OPLOOD_FENCE);
+        BBrealrant.fence(InitBlocks.AEKLOOD_FENCE);
+        CCrealrant.fence(InitBlocks.KRESS_FENCE);
+        AArealrant.fence(InitBlocks.SMANY_FENCE);
+        DDrealrant.fence(InitBlocks.BLUSHET_FENCE);
+
+
 
 
 

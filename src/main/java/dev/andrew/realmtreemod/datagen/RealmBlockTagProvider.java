@@ -47,9 +47,52 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.DIRE_LOG)
                 .add(InitBlocks.MITHRIL_PLANKS)
                 .add(InitBlocks.MITHRIL_PLANKS_SLAB)
-                .add(InitBlocks.DROW_PLANKS)
-                .add(InitBlocks.DROW_PLANKS_SLAB)
                 .add(InitBlocks.DROW_PLANKS_FENCE)
+                .add(InitBlocks.CRYSTAL_PLANKS)
+                .add(InitBlocks.CRYSTAL_SLAB)
+                .add(InitBlocks.CRYSTAL_FENCE)
+                .add(InitBlocks.ASHRET_PLANKS)
+                .add(InitBlocks.ASHRET_FENCE)
+                .add(InitBlocks.ASHRET_SLAB)
+                .add(InitBlocks.ELF_PLANKS)
+                .add(InitBlocks.ELF_FENCE)
+                .add(InitBlocks.ALOGRORN_PLANKS)
+                .add(InitBlocks.ALOGRORN_FENCE)
+                .add(InitBlocks.DIRE_PLANKS)
+                .add(InitBlocks.DIRE_FENCE)
+                .add(InitBlocks.DIRE_SLAB)
+                .add(InitBlocks.ELF_SLAB)
+                .add(InitBlocks.MITHRIL_STRIPPED_LOG)
+                .add(InitBlocks.ELF_STRIPPED_LOG)
+                .add(InitBlocks.BUCKEYE_LOG)
+                .add(InitBlocks.DOGWOOD_LOG)
+                .add(InitBlocks.SCONET_LOG)
+                .add(InitBlocks.SCONET_PLANKS)
+                .add(InitBlocks.SCONET_FENCE)
+                .add(InitBlocks.OPLOOD_LOG)
+                .add(InitBlocks.OPLOOD_FENCE)
+                .add(InitBlocks.OPLOOD_PLANKS)
+                .add(InitBlocks.OPLOOD_SLAB)
+                .add(InitBlocks.AEKLOOD_LOG)
+                .add(InitBlocks.AEKLOOD_FENCE)
+                .add(InitBlocks.AEKLOOD_PLANKS)
+                .add(InitBlocks.KRESS_LOG)
+                .add(InitBlocks.KRESS_PLANKS)
+                .add(InitBlocks.KRESS_FENCE)
+                .add(InitBlocks.SMANY_LOG)
+                .add(InitBlocks.SMANY_FENCE)
+                .add(InitBlocks.SMANY_PLANKS)
+                .add(InitBlocks.ICHREAM_LOG)
+                .add(InitBlocks.TUFICH_LOG)
+                .add(InitBlocks.BLUSHET_LOG)
+                .add(InitBlocks.BLUSHET_PLANKS)
+                .add(InitBlocks.BLUSHET_FENCE)
+                .add(InitBlocks.OLEN_LOG)
+                .add(InitBlocks.GOLD_ELF_LOG)
+                .add(InitBlocks.TREE_ELF_LOG)
+                .add(InitBlocks.SILVERELF_LOG)
+                .add(InitBlocks.PEACH_LOG)
+                .add(InitBlocks.NIGHTELF_LOG)
                 .add(InitBlocks.BlACKWALNUT_LOG);
 
 
@@ -82,6 +125,24 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.EIKEW_LOG)
                 .add(InitBlocks.DLONET_LOG)
                 .add(InitBlocks.DIRE_LOG)
+                .add(InitBlocks.MITHRIL_STRIPPED_LOG)
+                .add(InitBlocks.ELF_STRIPPED_LOG)
+                .add(InitBlocks.BUCKEYE_LOG)
+                .add(InitBlocks.DOGWOOD_LOG)
+                .add(InitBlocks.SCONET_LOG)
+                .add(InitBlocks.OPLOOD_LOG)
+                .add(InitBlocks.AEKLOOD_LOG)
+                .add(InitBlocks.KRESS_LOG)
+                .add(InitBlocks.SMANY_LOG)
+                .add(InitBlocks.ICHREAM_LOG)
+                .add(InitBlocks.TUFICH_LOG)
+                .add(InitBlocks.BLUSHET_LOG)
+                .add(InitBlocks.OLEN_LOG)
+                .add(InitBlocks.GOLD_ELF_LOG)
+                .add(InitBlocks.TREE_ELF_LOG)
+                .add(InitBlocks.SILVERELF_LOG)
+                .add(InitBlocks.PEACH_LOG)
+                .add(InitBlocks.NIGHTELF_LOG)
                 .add(InitBlocks.BlACKWALNUT_LOG);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
@@ -93,18 +154,56 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.MITHRIL_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(InitBlocks.BLUSHET_PLANKS)
+                .add(InitBlocks.SMANY_PLANKS)
+                .add(InitBlocks.KRESS_PLANKS)
+                .add(InitBlocks.OPLOOD_PLANKS)
+                .add(InitBlocks.SCONET_PLANKS)
+                .add(InitBlocks.DIRE_PLANKS)
+                .add(InitBlocks.ALOGRORN_PLANKS)
+                .add(InitBlocks.ELF_PLANKS)
+                .add(InitBlocks.ASHRET_PLANKS)
+                .add(InitBlocks.CRYSTAL_PLANKS)
                 .add(InitBlocks.DROW_PLANKS)
+                .add(InitBlocks.AEKLOOD_PLANKS)
                 .add(InitBlocks.MITHRIL_PLANKS);
 
 
         getOrCreateTagBuilder(BlockTags.SLABS)
-                .add(InitBlocks.DROW_PLANKS_SLAB)
+                .add(InitBlocks.OPLOOD_SLAB)
+                .add(InitBlocks.ELF_SLAB)
+                .add(InitBlocks.DIRE_SLAB)
+                .add(InitBlocks.ASHRET_SLAB)
+                .add(InitBlocks.CRYSTAL_SLAB)
+                .add(InitBlocks.AEKLOOD_SLAB)
                 .add(InitBlocks.MITHRIL_PLANKS_SLAB);
 
 
+
         getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(InitBlocks.BLUSHET_FENCE)
+                .add(InitBlocks.SMANY_FENCE)
+                .add(InitBlocks.KRESS_FENCE)
+                .add(InitBlocks.OPLOOD_FENCE)
+                .add(InitBlocks.SCONET_FENCE)
+                .add(InitBlocks.DIRE_FENCE)
+                .add(InitBlocks.ALOGRORN_FENCE)
+                .add(InitBlocks.ELF_FENCE)
+                .add(InitBlocks.ASHRET_FENCE)
+                .add(InitBlocks.CRYSTAL_FENCE)
                 .add(InitBlocks.DROW_PLANKS_FENCE)
+                .add(InitBlocks.AEKLOOD_FENCE)
                 .add(InitBlocks.MITHRIL_PLANKS_FENCE);
+
+
+
+
+
+
+
+
+
+
 
 
 

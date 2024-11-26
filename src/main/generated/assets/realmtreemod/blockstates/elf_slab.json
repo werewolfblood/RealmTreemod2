@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realmtreemod:block/elf_slab"
+    },
+    "type=double": {
+      "model": "realmtreemod:block/elf_planks"
+    },
+    "type=top": {
+      "model": "realmtreemod:block/elf_slab_top"
+    }
+  }
+}

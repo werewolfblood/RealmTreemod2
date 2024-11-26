@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realmtreemod:block/dire_slab"
+    },
+    "type=double": {
+      "model": "realmtreemod:block/dire_planks"
+    },
+    "type=top": {
+      "model": "realmtreemod:block/dire_slab_top"
+    }
+  }
+}

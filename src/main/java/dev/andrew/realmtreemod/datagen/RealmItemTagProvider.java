@@ -22,5 +22,6 @@ public class RealmItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(InitBlocks.SILVER_LEAVES.asItem())
                 .add(InitBlocks.MITHRIL_LEAVES.asItem());
 
+
     }
 }

@@ -61,9 +61,57 @@ public class RealmLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(InitBlocks.DLONET_LOG);
         addDrop(InitBlocks.DIRE_LOG);
         addDrop(InitBlocks.MITHRIL_PLANKS_FENCE);
-        addDrop(InitBlocks.DROW_PLANKS);
         addDrop(InitBlocks.DROW_PLANKS_SLAB);
         addDrop(InitBlocks.DROW_PLANKS_FENCE);
+        addDrop(InitBlocks.CRYSTAL_PLANKS);
+        addDrop(InitBlocks.CRYSTAL_SLAB);
+        addDrop(InitBlocks.CRYSTAL_FENCE);
+        addDrop(InitBlocks.ASHRET_PLANKS);
+        addDrop(InitBlocks.ASHRET_FENCE);
+        addDrop(InitBlocks.ASHRET_SLAB);
+        addDrop(InitBlocks.ELF_PLANKS);
+        addDrop(InitBlocks.ELF_FENCE);
+        addDrop(InitBlocks.ALOGRORN_PLANKS);
+        addDrop(InitBlocks.ALOGRORN_FENCE);
+        addDrop(InitBlocks.DIRE_PLANKS);
+        addDrop(InitBlocks.DIRE_FENCE);
+        addDrop(InitBlocks.DIRE_SLAB);
+        addDrop(InitBlocks.ELF_SLAB);
+        addDrop(InitBlocks.MITHRIL_STRIPPED_LOG);
+        addDrop(InitBlocks.ELF_STRIPPED_LOG);
+        addDrop(InitBlocks.BUCKEYE_LOG);
+        addDrop(InitBlocks.DOGWOOD_LOG);
+        addDrop(InitBlocks.SCONET_LOG);
+        addDrop(InitBlocks.SCONET_PLANKS);
+        addDrop(InitBlocks.SCONET_FENCE);
+        addDrop(InitBlocks.OPLOOD_LOG);
+        addDrop(InitBlocks.OPLOOD_SLAB);
+        addDrop(InitBlocks.OPLOOD_PLANKS);
+        addDrop(InitBlocks.OPLOOD_FENCE);
+        addDrop(InitBlocks.AEKLOOD_LOG);
+        addDrop(InitBlocks.AEKLOOD_SLAB);
+        addDrop(InitBlocks.AEKLOOD_PLANKS);
+        addDrop(InitBlocks.KRESS_LOG);
+        addDrop(InitBlocks.KRESS_PLANKS);
+        addDrop(InitBlocks.KRESS_FENCE);
+        addDrop(InitBlocks.SMANY_LOG);
+        addDrop(InitBlocks.SMANY_FENCE);
+        addDrop(InitBlocks.SMANY_PLANKS);
+        addDrop(InitBlocks.ICHREAM_LOG);
+        addDrop(InitBlocks.TUFICH_LOG);
+        addDrop(InitBlocks.BLUSHET_LOG);
+        addDrop(InitBlocks.BLUSHET_FENCE);
+        addDrop(InitBlocks.OLEN_LOG);
+        addDrop(InitBlocks.GOLD_ELF_LOG);
+        addDrop(InitBlocks.TREE_ELF_LOG);
+        addDrop(InitBlocks.SILVERELF_LOG);
+        addDrop(InitBlocks.PEACH_LOG);
+        addDrop(InitBlocks.NIGHTELF_LOG);
+
+
+
+
+
 
     }
 

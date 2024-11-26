@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/slab_thickness_seven_all",
   "textures": {
     "all": "realmtreemod:block/drow_planks"
   }

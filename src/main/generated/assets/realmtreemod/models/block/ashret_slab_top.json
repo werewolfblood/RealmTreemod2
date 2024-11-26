@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "realmtreemod:block/ashret_planks",
+    "side": "realmtreemod:block/ashret_planks",
+    "top": "realmtreemod:block/ashret_planks"
+  }
+}
