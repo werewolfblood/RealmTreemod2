@@ -46,17 +46,17 @@ public class RealmLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(InitBlocks.SHADOW_FIR_LOG);
         addDrop(InitBlocks.DARKELF_LOG);
         addDrop(InitBlocks.YEZHOVE_LOG);
-       addDrop(InitBlocks.EDLIFER_LOG);
-       addDrop(InitBlocks.KLINWOOD_LOG);
-       addDrop(InitBlocks.GREEN_FIR_LOG);
-       addDrop(InitBlocks.ASHRET_LOG);
-       addDrop(InitBlocks.SUNELF_LEAVES);
-       addDrop(InitBlocks.DARKELF_LEAVES);
-       addDrop(InitBlocks.WEEPING_LOG);
-       addDrop(InitBlocks.OTHON_LOG);
-       addDrop(InitBlocks.ALOGRORN_LOG);
-     addDrop(InitBlocks.MITHRIL_PLANKS);
-     addDrop(InitBlocks.MITHRIL_PLANKS_SLAB);
+        addDrop(InitBlocks.EDLIFER_LOG);
+        addDrop(InitBlocks.KLINWOOD_LOG);
+        addDrop(InitBlocks.GREEN_FIR_LOG);
+        addDrop(InitBlocks.ASHRET_LOG);
+        addDrop(InitBlocks.SUNELF_LEAVES);
+        addDrop(InitBlocks.DARKELF_LEAVES);
+        addDrop(InitBlocks.WEEPING_LOG);
+        addDrop(InitBlocks.OTHON_LOG);
+        addDrop(InitBlocks.ALOGRORN_LOG);
+        addDrop(InitBlocks.MITHRIL_PLANKS);
+        addDrop(InitBlocks.MITHRIL_PLANKS_SLAB);
         addDrop(InitBlocks.EIKEW_LOG);
         addDrop(InitBlocks.DLONET_LOG);
         addDrop(InitBlocks.DIRE_LOG);
@@ -107,18 +107,12 @@ public class RealmLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(InitBlocks.SILVERELF_LOG);
         addDrop(InitBlocks.PEACH_LOG);
         addDrop(InitBlocks.NIGHTELF_LOG);
-
-
-
-
-
-
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
-        return this.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop, ((LeafEntry.Builder<?>)
-                ItemEntry.builder(item).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops))))
+        return this.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop, ItemEntry.builder(item)
+                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops)))
                 .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))));
     }
 }

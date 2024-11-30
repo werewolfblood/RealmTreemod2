@@ -6,6 +6,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+// you can delete this class if you want
+// TODO: DELETE THIS CLASS
 @Mixin(MinecraftClient.class)
 public class ExampleClientMixin {
 	@Inject(at = @At("HEAD"), method = "run")

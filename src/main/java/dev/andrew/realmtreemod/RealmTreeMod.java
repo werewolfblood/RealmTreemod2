@@ -16,6 +16,5 @@ public class RealmTreeMod implements ModInitializer {
 		InitBlocks.registerModBlocks();
 		InitItems.registerModItems();
 
-		LOGGER.info("Hello Fabric world!");
 	}
 }

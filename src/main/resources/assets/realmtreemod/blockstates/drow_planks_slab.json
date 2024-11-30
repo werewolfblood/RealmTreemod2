@@ -1,13 +1,52 @@
 {
   "variants": {
-    "type=bottom": {
-      "model": "realmtreemod:block/drow_planks_slab"
-    },
-    "type=double": {
-      "model": "realmtreemod:block/drow_planks"
-    },
-    "type=top": {
-      "model": "realmtreemod:block/drow_planks_slab_top"
-    }
+    "facing=down,layers=1":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "uvlock": true},
+    "facing=up,layers=1":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "x": 180 , "uvlock": true},
+    "facing=north,layers=1":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,layers=1":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "x": 90 , "uvlock": true},
+    "facing=east,layers=1":  { "model": "realmtreemod:block/stack_slab_drow_one" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,layers=1":  { "model": "drow_planks_slab:block/stack_slab_drow_one" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,layers=2":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "uvlock": true},
+    "facing=up,layers=2":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 180 , "uvlock": true},
+    "facing=north,layers=2":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,layers=2":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 90 , "uvlock": true},
+    "facing=east,layers=2":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,layers=2":  { "model": "drow_planks_slab:block/stack_slab_drow_two" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,layers=3":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "uvlock": true},
+    "facing=up,layers=3":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 180 , "uvlock": true},
+    "facing=north,layers=3":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,layers=3":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 90 , "uvlock": true},
+    "facing=east,layers=3":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,layers=3":  { "model": "drow_planks_slab:block/stack_slab_drow_three" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,layers=4":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "uvlock": true},
+    "facing=up,layers=4":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 180 , "uvlock": true},
+    "facing=north,layers=4":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,layers=4":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 90 , "uvlock": true},
+    "facing=east,layers=4":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,layers=4":  { "model": "drow_planks_slab:block/stack_slab_drow_four" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,layers=5":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "uvlock": true},
+    "facing=up,layers=5":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "x": 180 , "uvlock": true},
+    "facing=north,layers=5":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,layers=5":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "x": 90 , "uvlock": true},
+    "facing=east,layers=5":  { "model": "drow_planks_slab:block/stack_slab-drow_five" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,layers=5":  { "model": "drow_planks_slab:block/stack_slab_drow_five" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,layers=6":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "uvlock": true},
+    "facing=up,layers=6":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 180 , "uvlock": true},
+    "facing=north,layers=6":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 90, "y": 180 , "uvlock": true},
+    "facing=south,layers=6":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 90 , "uvlock": true},
+    "facing=east,layers=6":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 90, "y": 270 , "uvlock": true},
+    "facing=west,layers=6":  { "model": "drow_planks_slab:block/stack_slab_drow_six" , "x": 90, "y": 90 , "uvlock": true},
+
+    "facing=down,layers=7":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=up,layers=7":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=north,layers=7":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=south,layers=7":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=east,layers=7":  { "model": "realmtreemod:block/drow_planks_slab" },
+    "facing=west,layers=7":  { "model": "realmtreemod:block/drow_planks_slab" }
   }
 }

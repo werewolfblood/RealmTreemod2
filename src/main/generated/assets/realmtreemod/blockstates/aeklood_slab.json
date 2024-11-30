@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realmtreemod:block/aeklood_slab"
+    },
+    "type=double": {
+      "model": "realmtreemod:block/aeklood_planks"
+    },
+    "type=top": {
+      "model": "realmtreemod:block/aeklood_slab_top"
+    }
+  }
+}

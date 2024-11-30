@@ -9,6 +9,8 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
@@ -21,9 +23,10 @@ import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
 
-public class RealmSevenSlab extends Block {
-    public static final MapCodec<SnowBlock> CODEC = createCodec(SnowBlock::new);
+public class RealmSevenSlab extends FacingBlock {
+    public static final MapCodec<RealmSevenSlab> CODEC = createCodec(RealmSevenSlab::new);
     public static final int MAX_LAYERS = 7;
+
     public static final IntProperty LAYERS = Properties.LAYERS;
     protected static final VoxelShape[] LAYERS_TO_SHAPE = new VoxelShape[]{
             VoxelShapes.empty(),
@@ -36,30 +39,35 @@ public class RealmSevenSlab extends Block {
             Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 14.0, 16.0),
             Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0)
     };
-    public static final int field_31248 = 5;
 
     @Override
-    public MapCodec<SnowBlock> getCodec() {
+    public MapCodec<RealmSevenSlab> getCodec() {
         return CODEC;
     }
 
     public RealmSevenSlab(AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(LAYERS, Integer.valueOf(1)));
+        this.setDefaultState(this.stateManager.getDefaultState()
+                .with(LAYERS, 1)
+                .with(FACING, Direction.NORTH));
+    }
+
+    @Override
+    protected BlockState rotate(BlockState state, BlockRotation rotation) {
+        return state.with(FACING, rotation.rotate(state.get(FACING)));
+    }
+
+    @Override
+    protected BlockState mirror(BlockState state, BlockMirror mirror) {
+        return state.rotate(mirror.getRotation(state.get(FACING)));
     }
 
     @Override
     protected boolean canPathfindThrough(BlockState state, NavigationType type) {
-        switch (type) {
-            case LAND:
-                return (Integer)state.get(LAYERS) < 5;
-            case WATER:
-                return false;
-            case AIR:
-                return false;
-            default:
-                return false;
-        }
+        return switch (type) {
+            case LAND -> state.get(LAYERS) < 5;
+            case WATER, AIR -> false;
+        };
     }
 
     @Override
@@ -69,7 +77,7 @@ public class RealmSevenSlab extends Block {
 
     @Override
     protected VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return LAYERS_TO_SHAPE[state.get(LAYERS) - 1];
+        return LAYERS_TO_SHAPE[state.get(LAYERS)];
     }
 
     @Override
@@ -89,7 +97,7 @@ public class RealmSevenSlab extends Block {
 
     @Override
     protected float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
-        return state.get(LAYERS) == 8 ? 0.2F : 1.0F;
+        return state.get(LAYERS) == 7 ? 0.2F : 1.0F;
     }
 
     @Override
@@ -97,11 +105,9 @@ public class RealmSevenSlab extends Block {
         BlockState blockState = world.getBlockState(pos.down());
         if (blockState.isIn(BlockTags.SNOW_LAYER_CANNOT_SURVIVE_ON)) {
             return false;
-        } else {
-            return blockState.isIn(BlockTags.SNOW_LAYER_CAN_SURVIVE_ON)
-                    ? true
-                    : Block.isFaceFullSquare(blockState.getCollisionShape(world, pos.down()), Direction.UP) || blockState.isOf(this) && (Integer)blockState.get(LAYERS) == 8;
         }
+        return blockState.isIn(BlockTags.SNOW_LAYER_CAN_SURVIVE_ON) ||
+                Block.isFaceFullSquare(blockState.getCollisionShape(world, pos.down()), Direction.UP) || blockState.isOf(this) && blockState.get(LAYERS) == 8;
     }
 
     @Override
@@ -123,11 +129,11 @@ public class RealmSevenSlab extends Block {
 
     @Override
     protected boolean canReplace(BlockState state, ItemPlacementContext context) {
-        int i = (Integer)state.get(LAYERS);
-        if (!context.getStack().isOf(this.asItem()) || i >= 7) {
-            return i == 1;
+        int layers = state.get(LAYERS);
+        if (!context.getStack().isOf(this.asItem()) || layers >= 7) {
+            return layers == 1;
         } else {
-            return context.canReplaceExisting() ? context.getSide() == Direction.UP : true;
+            return !context.canReplaceExisting() || context.getSide() == Direction.UP;
         }
     }
 
@@ -136,15 +142,15 @@ public class RealmSevenSlab extends Block {
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         BlockState blockState = ctx.getWorld().getBlockState(ctx.getBlockPos());
         if (blockState.isOf(this)) {
-            int i = (Integer)blockState.get(LAYERS);
-            return blockState.with(LAYERS, Integer.valueOf(Math.min(8, i + 1)));
+            int layers = blockState.get(LAYERS);
+            return blockState.with(LAYERS, Math.min(7, layers + 1));
         } else {
-            return super.getPlacementState(ctx);
+            return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite().getOpposite());
         }
     }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(LAYERS);
+        builder.add(LAYERS, FACING);
     }
 }

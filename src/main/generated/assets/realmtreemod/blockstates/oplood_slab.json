@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "realmtreemod:block/oplood_slab"
+    },
+    "type=double": {
+      "model": "realmtreemod:block/oplood_planks"
+    },
+    "type=top": {
+      "model": "realmtreemod:block/oplood_slab_top"
+    }
+  }
+}

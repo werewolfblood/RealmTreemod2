@@ -3,10 +3,8 @@
   "package": "dev.andrew.realmtreemod.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ExampleMixin"
-
   ],
   "injectors": {
     "defaultRequire": 1
-	}
+  }
 }

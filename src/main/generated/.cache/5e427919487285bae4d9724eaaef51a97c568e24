@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-29T18:55:21.8491016	RealmTree Mod/Block Loot Tables
+// 1.21.1	2024-11-30T01:05:59.0708351	RealmTree Mod/Block Loot Tables
 ddc3a9b50230692e0506cb3888bca90ce7b1ac1e data\realmtreemod\loot_table\blocks\crystal_slab.json
 61a84afe803007079b019faf59dd8324d7d219d6 data\realmtreemod\loot_table\blocks\silverelf_log.json
 63516d7fe7b6606b6a95188130320390d8717359 data\realmtreemod\loot_table\blocks\iorany_log.json
@@ -78,7 +78,6 @@ ba526dd72124e46e918c8d99a220880a87966198 data\realmtreemod\loot_table\blocks\aek
 b468423b6f26cad605554f490493ef37fcc969cf data\realmtreemod\loot_table\blocks\darkelf_log.json
 4d188440efc7e8b76e62ce7da20634ce3469c9b9 data\realmtreemod\loot_table\blocks\sconet_fence.json
 11a97b3284b3ee5f6a844154d0b4ade7e20754de data\realmtreemod\loot_table\blocks\elf_stripped_log.json
-34467ff3b6dc966505cc396fbe7058613ecc91e9 data\realmtreemod\loot_table\blocks\drow_planks.json
 dbd3db87538c3ff2e24bbffb8e06db2b8d2baaf1 data\realmtreemod\loot_table\blocks\sunelf_leaves.json
 b8445cc7c60538fd27bf9327e29a5e28fbffa5ec data\realmtreemod\loot_table\blocks\mithril_leaves.json
 c31f6cd1f11d9023be224921ae62a93c929a5f05 data\realmtreemod\loot_table\blocks\buckeye_log.json
