@@ -1,0 +1,6 @@
+{
+  "parent": "realmtreemod:block/slab_layers_one_all",
+  "textures": {
+    "all": "realmtreemod:block/drow_planks-slab"
+  }
+}

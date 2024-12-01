@@ -1,5 +1,5 @@
 {
-  "parent": "realmtreemod:block/slab_thickness_five",
+  "parent": "realmtreemod:block/slab_layers_five",
   "textures": {
     "particle": "#all",
     "down": "#all",

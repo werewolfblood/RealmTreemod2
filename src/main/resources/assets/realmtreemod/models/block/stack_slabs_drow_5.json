@@ -1,6 +1,0 @@
-{
-  "parent": "realmtreemod:block/slab_thickness_five_all",
-  "textures": {
-    "all": "realmtreemod:block/drow_planks_slab"
-  }
-}
